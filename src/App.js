@@ -8,7 +8,7 @@ const Header = styled.div`
 	font-weight: bold;
 	color: white;
 	padding: 1%;
-	position: fixed;
+	position: sticky;
 	width: 100%;
 `;
 
@@ -21,9 +21,7 @@ const Nav = styled.nav`
 	background-color: #323051;
 	color: white;
 	font-size: 150%;
-	height: 100vh;
-	margin-top: 5%;
-	position: fixed;
+	position: sticky;
 `;
 
 const Logo = styled.img``;
