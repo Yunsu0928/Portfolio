@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { BiUser } from "react-icons/bi";
+import { BsLaptop, BsPhoneFlip } from "react-icons/bs";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 const Container = styled.div``;
 
@@ -18,6 +21,8 @@ const StyledBody = styled.div`
 
 const Nav = styled.nav`
 	width: 12%;
+	padding-top: 5%;
+	padding-bottom: 9%;
 	background-color: #323051;
 	color: white;
 	font-size: 150%;
@@ -30,12 +35,28 @@ const StyledUl = styled.ul`
 	list-style-type: none;
 `;
 
+const StyledSidebar = styled.div`
+	display: flex;
+`;
+
 const StyledLi = styled.li`
-	padding-bottom: 10%;
+	padding-bottom: 40%;
+	font-weight: bold;
+	margin-left: 10px;
 `;
 
 const StyledMain = styled.main`
 	background-color: #f1f0f7;
+`;
+
+const Footer = styled.footer`
+	background-color: #323051;
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
+	padding: 1%;
+	position: sticky;
+	width: 100%;
 `;
 
 function App() {
@@ -46,10 +67,22 @@ function App() {
 				<Nav>
 					<Logo />
 					<StyledUl>
-						<StyledLi>PROFILE</StyledLi>
-						<StyledLi>SKILL</StyledLi>
-						<StyledLi>PROJECTS</StyledLi>
-						<StyledLi>CONNECT</StyledLi>
+						<StyledSidebar>
+							<BiUser />
+							<StyledLi>PROFILE</StyledLi>
+						</StyledSidebar>
+						<StyledSidebar>
+							<BsLaptop />
+							<StyledLi>SKILL</StyledLi>
+						</StyledSidebar>
+						<StyledSidebar>
+							<AiOutlineFundProjectionScreen />
+							<StyledLi>PROJECT</StyledLi>
+						</StyledSidebar>
+						<StyledSidebar>
+							<BsPhoneFlip />
+							<StyledLi>CONNECT</StyledLi>
+						</StyledSidebar>
 					</StyledUl>
 				</Nav>
 				<StyledMain>
@@ -58,7 +91,7 @@ function App() {
 					</div>
 				</StyledMain>
 			</StyledBody>
-			<footer></footer>
+			<Footer>안녕</Footer>
 		</Container>
 	);
 }
