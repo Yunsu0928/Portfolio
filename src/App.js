@@ -89,6 +89,7 @@ function App() {
 					<div>
 						메인이다adkfjladjfklaㅁㅇㄹㅁㅇㄹㅁㅇㄹㅁㅇㄹdjsfklajdfklajdklfjalkdjflkajdsflkj
 					</div>
+					<div>가나다라마바사아자차저ㅏ미러ㅏㅇ너림어라ㅣ</div>
 				</StyledMain>
 			</StyledBody>
 			<Footer>안녕</Footer>
